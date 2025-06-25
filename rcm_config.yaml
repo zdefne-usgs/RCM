@@ -37,4 +37,4 @@ y_prefix_list: ["AMC", "TSA", "SOI"]
 # Double: Label using prefixes below and indices from X and Y axes
 diagonal_label_type: "Default"           # Options: None, Default, Single
 single_diagonal_prefix: "Pair"
-diagonal_lable_color : "black"
+diagonal_label_color : "black"
