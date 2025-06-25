@@ -18,7 +18,7 @@ t_steps_to_label: [0, 3, 6, 9]
 # Color is linearly interpolated between cmax and cmin if normalize is set to True
 # Threshold: Do not plot values if lower than the threshold
 
-colormap_name: "viridis"  # options: viridis, jet, RdBu, RdYlBu,  ...
+colormap_name: "YlOrBr"  # options: viridis, jet, RdBu, RdYlBu, YlOrBr, ...
 normalize: True           # False True
 cmax: 1
 cmin: 0
