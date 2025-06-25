@@ -3,31 +3,31 @@
 # Variable[time_dimension, y_dimension, x_dimension]
 
 # Figure settings
-title: "Correlation with lag (months)"
-variable_name: "Correlation"
+title: "Time enabled connectivity"
+variable_name: "Concentration"
 fig_height: 6
 fig_width: 8
 
 # Clock label settings
 add_clock_label: True   # Options: False True
 t_count: 12             # Options: 12 60 100 ...
-t_label: "Month"         # Milisecond Second Minute Hour Day Month Year Decade Century ...
+t_label: "Hour"         # Milisecond Second Minute Hour Day Month Year Decade Century ...
 t_steps_to_label: [0, 3, 6, 9]
 
 # Color settings
 # Color is linearly interpolated between cmax and cmin if normalize is set to True
 # Threshold: Do not plot values if lower than the threshold
 
-colormap_name: "RdYlBu"  # options: viridis, jet, RdBu, RdYlBu,  ...
+colormap_name: "viridis"  # options: viridis, jet, RdBu, RdYlBu,  ...
 normalize: True           # False True
 cmax: 1
-cmin: -1
-threshold:                # 0.001, 0.0001, (or leave blank for no threshold)
+cmin: 0
+threshold: 0.001          # 0.001, 0.0001, (or leave blank for no threshold)
 
 # Axis label settings
 x_prefix: "Destination"
 y_prefix: "Source"
-add_axis_labels_from_list: True      # True if each row and column have custom labels
+add_axis_labels_from_list: False      # True if each row and column have custom labels
 x_prefix_list: ["Region 1", "Region 2", "Region 3", "Region 4"]
 y_prefix_list: ["AMC", "TSA", "SOI"]
 
