@@ -1,4 +1,4 @@
-# Relation Clock Matrix (formerly Retention Clock Matrix)
+# Relation Clock Matrix (aka. Retention Clock Matrix)
 
 This code generate a Relation Clock Matrix (RCM) plot for a given input. The input should be a 3-D matrix with dimensions with [time] and connectivity dimensions [x,y]. 
 
@@ -15,7 +15,9 @@ Settings can be adjusted with the included yaml file.
 
 ## Output
 
-[Insert example plot here]
+![Example output plot](sample_output.png)
+
+**Figure 1.** Example outptut.
 
 ## Example: RCM for plotting connectivity in a bay
 
