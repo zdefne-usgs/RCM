@@ -1,0 +1,40 @@
+# INSTRUCTIONS:
+# Prepare your data to be a data cube with the following structure:
+# Variable[time_dimension, y_dimension, x_dimension]
+
+# clock_and_matrix_dimensions
+# t_count_from_data: true
+# y_count_from_data: true
+# x_count_from_data: true
+# theta_from_data: true
+
+# Clock label settings
+t_count: 12
+t_label: "Hour"
+t_steps_to_label: [3, 6, 9]
+
+variable_name: "Concentration"
+
+# Color settings
+# Color is linearly interpolated between cmax and cmin if normalize is set to True
+# Threshold: Do not plot values if lower than the threshold
+
+colormap_name: "viridis"  # options: jet, viridis
+normalize: True
+cmax: 1
+cmin: 0
+threshold: 0.001
+
+# Axis label settings
+x_prefix: "X"
+y_prefix: "Y"
+
+# Diagonal_label settings
+# Default: plot X, Y indices
+# Single: Single label starting with single_diagonal_prefix  
+# Double: Label using prefixes below and indices from X and Y axes
+add_diagonal_label: "Default"  # options: None, Default, Single, Double
+single_diagonal_prefix: "Diagonal"
+double_diagonal_prefix_1: "X label"
+double_diagonal_prefix_2: "Y label"
+diagonal_lable_color : "black"
