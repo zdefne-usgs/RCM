@@ -15,7 +15,7 @@ Settings can be adjusted with the included yaml file.
 
 ## Output
 
-[RCM/output.png]
+![Example output plot](sample_output.png)
 
 **Figure 1.** Example outptut.
 
