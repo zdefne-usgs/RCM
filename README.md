@@ -1,27 +1,31 @@
 # Relation Clock Matrix (aka. Retention Clock Matrix)
 
-This code generate a Relation Clock Matrix (RCM) plot for a given input. The inputs are a matrix with tree dimensions and a settings file. SEttings file is a yaml file with options and the matrix should have the dimensions of [time] and space [x,y] i.e. `rc_matrix[time, y, x]`. 
+This code generate a Relation Clock Matrix (RCM) plot for a given input. The inputs are a matrix with tree dimensions and a configuration file. Configuration file is a yaml file with options for changing figure settings and the matrix should have the dimensions of [time] and space [x,y] i.e. `rc_matrix[time, y, x]`. 
 
 ## Usage
 
 ```
-fig = plot_rcm(rc_matrix, "rcm_setting.yaml")
-
+fig = plot_rcm(rc_matrix, "rcm_config.yaml")
 ```
 
 ## Settings
-Settings can be adjusted with the included yaml file. 
+Figure settings can be adjusted in the configuration yaml file with a text editor. Two samples are available: 
 
+[rcm_config_correlation.yaml](https://github.com/zdefne-usgs/RCM/blob/main/rcm_config_correlation.yaml)
 
-[rcm_setting.yaml](https://github.com/zdefne-usgs/RCM/blob/main/rcm_input.yaml)
+[rcm_config_concentration.yaml](https://github.com/zdefne-usgs/RCM/blob/main/rcm_config_concentration.yaml)
 
 ## Example outputs
 
-The connectivity dimensions could be a pair of related entities. For example, in case of particle tracking it the three dimensions are going to be time, source and destination locations, and the values indicate concentration of particles (see example below). In the case of a correlation between parameters, the connectivity dimensions will be each pair of parameters while the values indicate the correlaltion for that pair and the time dimension can show the time lag.     
+The space dimensions could be a pair of related entities. For example, in the case of plotting correlation between parameters, the space dimensions can be pairs of parameters while the values can indicate the correlaltion for each pair and the time dimension can show the time lag.     
 
 ![Example output plot](sample_output_correlation.png)
 
-**Figure 1.** Example for plotting time lagged correlation between parmeters in multiple regions with .
+**Figure 1.** Example for plotting time lagged correlation between parmeters in multiple regions.
+
+<br>
+
+In the case of particle tracking the three dimensions can be time, source and destination locations, and the values can indicate concentration of particles changing in time. 
 
 ![Example output plot](sample_output_concentration.png)
 
