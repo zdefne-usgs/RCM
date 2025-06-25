@@ -21,8 +21,8 @@ cmin: 0
 threshold: 0.001
 
 # Axis label settings
-x_prefix: "X"
-y_prefix: "Y"
+x_prefix: "Destination"
+y_prefix: "Source"
 
 # Diagonal_label settings
 # Default: plot X, Y indices
