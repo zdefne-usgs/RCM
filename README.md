@@ -21,11 +21,11 @@ The connectivity dimensions could be a pair of related entities. For example, in
 
 ![Example output plot](sample_output_correlation.png)
 
-**Figure 1.** Example for plotting correaltion between parmeters in multiple regions with time lag.
+**Figure 1.** Example for plotting time lagged correlation between parmeters in multiple regions with .
 
 ![Example output plot](sample_output_concentration.png)
 
-**Figure 2.** Example for plotting concentration within different regions with time.
+**Figure 2.** Example for plotting change in concentration of particles from one region to another.
 
 # Example application: RCM for plotting connectivity in a bay
 
