@@ -1,29 +1,33 @@
 # Relation Clock Matrix (aka. Retention Clock Matrix)
 
-This code generate a Relation Clock Matrix (RCM) plot for a given input. The input should be a 3-D matrix with dimensions with [time] and connectivity dimensions [x,y]. 
+This code generate a Relation Clock Matrix (RCM) plot for a given input. The inputs are a matrix with tree dimensions and a settings file. SEttings file is a yaml file with options and the matrix should have the dimensions of [time] and space [x,y] i.e. `rc_matrix[time, y, x]`. 
+
+## Usage
 
 ```
-RC_matrix[time, y, x]
+fig = plot_rcm(rc_matrix, "rcm_setting.yaml")
+
 ```
-The connectivity dimensions could be a pair of related entities. For example, in case of particle tracking it the three dimensions are going to be time, source and destination locations, and the values indicate concentration of particles (see example below). In the case of a correlation between parameters, the connectivity dimensions will be each pair of parameters while the values indicate the correlaltion for that pair and the time dimension can show the time lag.     
 
 ## Settings
-Settings can be adjusted with the included yaml file.
+Settings can be adjusted with the included yaml file. 
 
 
 [rcm_setting.yaml](https://github.com/zdefne-usgs/RCM/blob/main/rcm_input.yaml)
 
 ## Example outputs
 
+The connectivity dimensions could be a pair of related entities. For example, in case of particle tracking it the three dimensions are going to be time, source and destination locations, and the values indicate concentration of particles (see example below). In the case of a correlation between parameters, the connectivity dimensions will be each pair of parameters while the values indicate the correlaltion for that pair and the time dimension can show the time lag.     
+
 ![Example output plot](sample_output_correlation.png)
 
-**Figure 1.** Example outptut.
+**Figure 1.** Example for plotting correaltion between parmeters in multiple regions with time lag.
 
 ![Example output plot](sample_output_concentration.png)
 
-**Figure 2.** Example outptut.
+**Figure 2.** Example for plotting concentration within different regions with time.
 
-## Example application: RCM for plotting connectivity in a bay
+# Example application: RCM for plotting connectivity in a bay
 
 In tihs case the clock shows cahnge in concentartion of particles in a location:
 
