@@ -5,8 +5,8 @@
 # Figure settings
 title: "Time enabled connectivity"
 variable_name: "Concentration"
-fig_height: 6
-fig_width: 8
+fig_height: 9
+fig_width: 9
 
 # Clock label settings
 add_clock_label: True   # Options: False True
@@ -37,4 +37,4 @@ y_prefix_list: ["AMC", "TSA", "SOI"]
 # Double: Label using prefixes below and indices from X and Y axes
 diagonal_label_type: "Default"           # Options: None, Default, Single
 single_diagonal_prefix: "Pair"
-diagonal_lable_color : "black"
+diagonal_lable_color : "white"
